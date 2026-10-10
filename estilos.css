@@ -1,0 +1,208 @@
+ 
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f5;
+    color: #303b36;
+    line-height: 1.7;
+}
+
+/* Menú de navegación */
+header {
+    background-color: #244c3b;
+    color: white;
+    padding: 18px 8%;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navegacion h2 {
+    font-size: 24px;
+}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navegacion a:hover {
+    color: #bce6c9;
+}
+
+/* Portada */
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 8%;
+    background-color: #e6efe8;
+}
+
+.contenido-portada {
+    flex: 1;
+}
+
+.subtitulo {
+    color: #357653;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.portada h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    margin-bottom: 22px;
+}
+
+.portada img {
+    width: 45%;
+    max-width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px #00000020;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    background-color: #357653;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #244c3b;
+}
+
+/* Secciones */
+.seccion {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 30px;
+    margin-bottom: 22px;
+    color: #244c3b;
+}
+
+.seccion > p {
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+/* Tarjetas de intereses */
+.intereses {
+    background-color: #ffffff;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: #f5f7f5;
+    padding: 28px;
+    border-radius: 14px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    box-shadow: 0 4px 14px #00000010;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+}
+
+.icono {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.tarjeta h3 {
+    color: #357653;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #e6efe8;
+}
+
+.contacto .boton {
+    margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #244c3b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .navegacion ul {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .portada {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .portada img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .seccion {
+        padding: 45px 6%;
+    }
+}
