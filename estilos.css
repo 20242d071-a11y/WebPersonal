@@ -206,3 +206,32 @@ footer {
         padding: 45px 6%;
     }
 }
+ 
+/* Sección de metas personales */
+.metas {
+    background-color: #f5f7f5;
+}
+
+.metas .tarjeta {
+    border: 1px solid #dce8df;
+}
+
+/* Sección de frase favorita */
+.frase {
+    background-color: #244c3b;
+    color: white;
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.frase h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.frase blockquote {
+    font-size: 22px;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
